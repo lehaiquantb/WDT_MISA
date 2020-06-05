@@ -1,0 +1,343 @@
+﻿/*
+    Div chứa tên chỉ mục, thiết lập ban đầu, phản hồi, toolbar...(content-head)
+    Người tạo: LHQuan 23/08/2019
+*/
+
+.content-category {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    height: 45px;
+}
+
+    .content-category div {
+        cursor: pointer;
+        line-height: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+/* toolbar */
+.toolbar {
+    position: absolute;
+    border: 1px solid #d0d0d0;
+    background-color: #e4e4e4;
+    display: flex;
+    align-items: center;
+    top: 45px;
+    left: 0px;
+    right: 0px;
+    height: 27px;
+}
+
+/*
+   Chỉnh sửa chi tiết từng mục trong content-category 
+   Người tạo: LHQuan 23/08/2019
+ */
+.category-name {
+    margin-left: 10px;
+    height: 45px;
+}
+
+.arrow-right-blue {
+    margin-left: 3px;
+    margin-right: 5px;
+    background: url('/Contents/icons/IconSprite.png') no-repeat 0 -832px;
+    width: 15px;
+    height: 15px;
+}
+
+.restart-settings {
+    border-radius: 3px;
+    border: 1px solid #d0d0d0;
+    height: 28px;
+    width: 170px;
+    margin-left: 666px;
+    margin-right: 5px;
+}
+
+.feedback {
+    border-radius: 3px;
+    border: 1px solid #d0d0d0;
+    height: 28px;
+    width: 100px;
+}
+
+.icon-feedback {
+    background: url('/Contents/icons/viewEmail.png');
+    margin-left: 14px;
+    margin-right: 6px;
+}
+
+/*
+    Chỉnh sửa chi tiết từng mục trong toolbar
+    Người tạo: LHQuan 23/08/2019
+*/
+.toolbar-item {
+    background-color: #e4e4e4;
+    display: flex;
+    height: 27px;
+    align-items: center;
+    cursor: pointer;
+}
+
+    .toolbar-item:hover {
+        background-color: #969696;
+    }
+
+.toolbar span {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.toolbar icon {
+    margin-left: 10px;
+}
+
+.sperator {
+    height: 18px;
+    width: 1px;
+    background-color: #d0d0d0;
+}
+
+/*icon add-new*/
+.icon.add-new {
+    background: url('/Contents/icons/IconSprite.png') no-repeat 0 -2648px;
+    margin-left: 5px;
+}
+
+/*icon duplicate*/
+.icon.duplicate {
+    background: url('/Contents/icons/IconSprite.png') no-repeat 0 -2096px;
+}
+
+/*icon edit*/
+.icon.edit {
+    background: url('/Contents/icons/IconSprite.png') no-repeat 0 -1872px;
+}
+
+/*icon delete*/
+.icon.delete {
+    background: url('/Contents/icons/IconSprite.png') no-repeat 0px -2680px;
+}
+
+/*icon reload*/
+.icon.reload {
+    background: url('/Contents/icons/IconSprite.png') no-repeat 0 -2585px;
+}
+
+/*icon import*/
+.icon.import {
+    background-image: url('/Contents/icons/Import16.png');
+    margin-left: 5px;
+}
+
+/*icon export*/
+.icon.export {
+    background-image: url('/Contents/icons/excel_97_24.png');
+    margin-left: 5px;
+}
+
+/*icon customer-group*/
+.icon.customer-group {
+    background-image: url('/Contents/icons/ic_GopKhachHang.png');
+    margin-left: 5px;
+}
+
+/*icon help-content*/
+.icon.help-content {
+    background: url('/Contents/icons/IconSprite.png') no-repeat 0 -1600px;
+    margin-left: 5px;
+}
+
+/*
+    Div chứa dữ liệu người dùng và phân trang(content-data)
+    Người tạo: LHQuan 24/08/2019
+*/
+
+/*
+    Bảng dữ liệu
+    Người tạo: LHQuan 25/08/2019
+*/
+.table-content {
+    position: absolute;
+    top: 0px;
+    bottom: 24px;
+    width: 100%;
+    overflow: auto;
+}
+
+.main-table {
+    overflow: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .main-table tbody tr {
+        background-color: #ffffff;
+        max-height: 24px;
+    }
+
+        .main-table tbody tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+    .main-table th {
+        padding: 2px;
+        height: 55px;
+        border-top: none !important;
+        background-color: #ebebeb;
+        position: sticky;
+        top: 0;
+        border: 1px solid #d0d0d0;
+        white-space: nowrap;
+    }
+
+    .main-table td {
+        height: 24px;
+        white-space: nowrap;
+        padding-left: 8px;
+        padding-right: 8px;
+        border: 1px solid #d0d0d0;
+    }
+
+th input, th select {
+    height: 24px;
+    padding: 2px 4px;
+    border: 1px solid #d9d9d9;
+    min-width: 50px;
+    width: 100%;
+}
+
+th > div {
+    margin-top: 6px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon.filter {
+    min-width: 24px;
+    line-height: 24px;
+    background-color: #fff;
+    height: 24px;
+    width: 24px;
+    border: 1px solid #d9d9d9;
+}
+
+.selected {
+    background-color: #d7e9f4 !important;
+}
+
+/*
+    Phân trang
+    Người tạo: LHQuan 25/08/2019
+*/
+
+.paging {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    height: 26px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border: 1px solid #d0d0d0;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+/*
+    Chỉnh sửa chi tiết các mục trong phân trang
+    Người tạo: LHQuan 25/08/2019
+*/
+
+/*icon first-page*/
+.icon.first-page {
+    margin-left: 5px;
+    background: url('/Contents/icons/page-first.png') no-repeat;
+}
+
+/*icon prev-page*/
+.icon.prev-page {
+    margin-left: 10px;
+    background: url('/Contents/icons/page-prev.png') no-repeat;
+}
+
+/*icon next-page*/
+.icon.next-page {
+    margin-right: 10px;
+    background: url('/Contents/icons/page-next.png') no-repeat;
+}
+
+/*icon last-page*/
+.icon.last-page {
+    background: url('/Contents/icons/page-last.png');
+}
+
+/*icon refesh-page*/
+.icon.refresh-page {
+    background: url('/Contents/icons/refresh.png') no-repeat;
+}
+
+/*input page-number*/
+.page-index {
+    margin-left: 5px;
+    margin-right: 4px;
+    height: 22px;
+    width: 38px;
+    border: 1px solid #d0d0d0 !important;
+}
+
+/*input page-size*/
+.page-total {
+    text-align: center;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+}
+
+/*select-page*/
+.select-page-size {
+    border: 1px solid #d0d0d0;
+    height: 24px;
+    width: 60px;
+}
+
+.paging .sperator {
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.paging input {
+    text-align: center;
+}
+
+.paging select {
+    z-index: 1;
+    background-color: #d0d0d0;
+    margin-left: 20px;
+}
+
+/*.arrow-down-black {
+    margin-left: -24px;
+    z-index: 2;
+    height: 24px;
+    width: 24px;
+    background: url('/Contents/icons/trigger.png') no-repeat -43px 1px;
+    background-color: #fff;
+    border: 1px solid #d0d0d0;
+}*/
+
+.paging .show-amount {
+    line-height: 24px;
+    position: absolute;
+    height: 24px;
+    right: 16px;
+    white-space: nowrap;
+    width: 500px;
+    text-align: right;
+}

@@ -1,0 +1,136 @@
+﻿/*
+    Không cho phép chuột bôi đen nội dung trong màn hình
+    Người tạo LHQuan 22/08/2019
+*/
+body {
+    overflow: hidden !important;
+    font-family: 'Roboto',Tahoma,sans-serif;
+    font-size: 13px;
+    color: #404040;
+    -moz-user-select: none; /* Trên Firefox */
+    -ms-user-select: none; /* Trên Internet Explorer */
+    -webkit-user-select: none; /* Trên Chrome, Safari, and Opera */
+    -webkit-touch-callout: none; /* Trên Android and iOS callouts (Điện thoại - máy tính bảng)*/
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    reset CSS
+*/
+* {
+    box-sizing: border-box;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+    Vị trí của header
+    Người tạo: LHQuan 22/08/2019
+*/
+#header {
+    position: absolute;
+    background-color: #026b97;
+    height: 55px;
+    top: 0px;
+    left: 230px;
+    right: 0px;
+    color: #fff;
+}
+
+/*
+    Vị trí cho thanh điều hướng menu
+    Người tạo: LHQuan 23/08/2019
+*/
+#nav-menu {
+    position: absolute;
+    background-color: #026b97;
+    color: #fff;
+    top: 0px;
+    left: 0px;
+    width: 230px;
+    height: 100%;
+    border-right: 1px solid #d0d0d0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/*
+    Vị trí content(danh mục khách hàng, dữ liệu, phân trang)
+    Người tạo: LHQuan 23/08/2019
+*/
+#content {
+    padding: 2px;
+    position: absolute;
+    top: 55px;
+    left: 230px;
+    right: 0px;
+    bottom: 5px;
+    background-color: #fff;
+}
+
+    /*
+        Chỉnh sửa vị trí các phần của content
+        Người tạo: LHQuan 24/08/2019
+    */
+    .content-head{
+        height: 72px;
+    }
+
+    .content-data{
+        position: absolute;
+        margin: 3px;
+        top: 72px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        border: 1px solid #d0d0d0;
+    }
+
+/*
+    Thuộc tính chung cho toàn bộ icon
+    Người tạo: LHQuan 23/08/2019
+*/
+.icon {
+    width: 16px;
+    height: 16px;
+}
+
+/*
+    Phần con qua data
+    Người tạo: LHQuan 26/08/2019
+*/
+#loading {
+    display: none;
+    position: absolute;
+    top: 130px;
+    left: 233px;
+    background-color: #fff;
+    height: 497px;
+    width: 1130px;
+    background: url(/Contents/images/loading.gif) no-repeat center #fff;
+    z-index: 3;
+}
+
+/*
+    Phần căn lề cho nội dung trong bảng
+    Người tạo: LHQuan 26/08/2019
+*/
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    height: 15px;
+    width: 15px;
+    text-align: center;
+}
+
+button[disabled]{
+    opacity: 0.5;
+}

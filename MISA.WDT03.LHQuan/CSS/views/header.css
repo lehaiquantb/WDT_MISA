@@ -1,0 +1,94 @@
+﻿/*
+    Tiêu đề header(Tên nhà hàng)
+    Người tạo: LHQuan 22/08/2019
+*/
+#header .header-title {
+    background-color: #0a0081;
+    height: 32px;
+    width: 200px;
+    margin-left: 5px;
+    margin-top: 11px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+    #header .header-title-option, #header .lang-option {
+        align-content: center;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+
+
+/*
+    Phần lựa chọn: ngông ngữ, tài khoản,trợ giúp...
+    Người tạo: LHQuan 22/08/2019
+*/
+.header-right {
+    padding: 2px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    align-items: center;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 50%;
+}
+
+    /*
+       Chi tiết
+    */
+    .lang {
+        background-color: #0e0489;
+        height: 32px;
+        width: 170px;
+        border-radius: 3px;
+        color: #fff;
+    }
+
+    .icon.notification {
+        background: url('/Contents/icons/icon-notification.png') no-repeat center center;
+        background-size: 40px;
+        margin-left: 14px;
+        width: 24px;
+        height: 24px;
+    }
+
+.icon.phone {
+    background: url('/Contents/icons/misasupport_1.png') no-repeat center center;
+    width: 65px;
+    height: 55px;
+}
+
+    .icon-support {
+        background: url('../../Contents/icons/5food.png') no-repeat center center !important ;
+        right: 40px;
+        top: 30px;
+        width: 34px;
+        height: 33px;
+    }
+
+    .header-right .user-panel{
+        display: flex;
+        margin-right: 0px;
+        font-weight: bold;
+    }
+
+.header-right span{
+    line-height: 55px;
+}
+
+.header-right .img-user {
+    background: url('/Contents/icons/EmployeeImage.png') no-repeat left center;
+    margin-top: 12px;
+    width: 28px;
+    height: 28px;
+}
+
+.icon.arrow-down-white1 {
+    background: url('/Contents/icons/default-small-arrow.png') no-repeat right center;
+    height: 55px;
+}

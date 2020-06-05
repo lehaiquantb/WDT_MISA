@@ -1,0 +1,241 @@
+﻿/*
+    DIALOG thêm mới khách hàng
+    Người tạo: LHQuan 25/08/2019
+*/
+
+/*Tiêu đề*/
+span.ui-dialog-title {
+    color: #fff;
+}
+
+/*icon close*/
+.ui-button .ui-icon {
+    border-radius: 100%;
+    background-color: #fff;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+    border-radius: 100%;
+    background-color: #fff;
+    content: "X";
+}
+
+/* Chi tiết các trường thông tin khách hàng*/
+.dialog-customer input {
+    width: 190px;
+    height: 22px;
+    border: 1px solid #d0d0d0;
+    padding: 2px 2px;
+}
+
+input[fieldName=CompanyName] {
+    margin-left: 66px;
+    width: 523px;
+}
+
+.dialog-customer .row {
+    margin-top: 4px;
+    white-space: nowrap;
+    display: flex;
+}
+
+input[fieldName=CustomerNo] {
+    margin-left: 24px;
+}
+
+input[fieldName=CustomerName] {
+    margin-left: 15px;
+}
+
+input[fieldName=TaxCode] {
+    margin-left: 66px;
+}
+
+input[fieldName=Email] {
+    margin-left: 92px;
+}
+
+input[fieldName=CustomerGroup] {
+    margin-left: 28px;
+}
+
+input[fieldName=CustomerPhone] {
+    margin-left: 56px;
+}
+
+input[fieldName=Birthday] {
+    margin-left: 76px;
+}
+
+input[fieldName=Address] {
+    width: 523px;
+    margin-left: 94px;
+}
+
+input[fieldName=CampanyName] {
+}
+
+.note {
+    display: flex;
+}
+
+    .note input {
+        margin-left: 89px;
+        margin-top: 4px;
+        height: 44px;
+        width: 523px;
+    }
+
+
+input.stop-watching {
+    margin-left: -44px;
+    height: 15px;
+}
+
+/*validate dữ liệu*/
+.validate-alert {
+    border: 1px solid red;
+}
+
+.validate {
+    color: red;
+    margin-left: -9px;
+    line-height: 22px;
+    height: 22px;
+    width: 10px;
+}
+
+/*Các button thêm, hủy bỏ, trợ giúp...*/
+.btn-function button {
+    border-radius: 2px;
+    border: 1px solid #d0d0d0;
+    height: 25px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-function {
+    left: 8px;
+    right: 8px;
+    position: absolute;
+    bottom: 8px;
+    justify-content: flex-end;
+}
+
+.icon.icon-help {
+    background: url('/Contents/icons/IconSprite.png') no-repeat 0 -1600px;
+}
+
+.btn-help {
+    min-width: 60px;
+    margin-right: 280px;
+}
+
+.btn-save {
+    min-width: 86px;
+    margin-right: 10px;
+}
+
+.icon.icon-save {
+    margin-right: 7px;
+    background: url('/Contents/icons/Save16.png');
+}
+
+.btn-save-add {
+    min-width: 125px;
+    margin-right: 10px;
+}
+
+.icon.icon-save-add {
+    margin-right: 7px;
+    background: url('/Contents/icons/SaveAdd16.png');
+}
+
+.btn-cancel {
+    min-width: 86px;
+}
+
+.icon.icon-cancel {
+    margin-right: 7px;
+    background: url('/Contents/icons/Disable16.png');
+}
+
+
+
+/*
+    DIALOG thông báo khi xóa
+    Người tạo: LHQuan 25/08/2019
+*/
+
+.dialog-del-customer {
+    border-left: 5px;
+    border-right: 5px;
+    border-bottom: 3px;
+}
+
+.del-yes-no {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 5px;
+    left: 0px;
+    right: 0px;
+    height: 24px;
+}
+
+.dialog-del-customer button {
+    margin-right: 5px;
+    border: 1px solid #808080;
+    height: 24px;
+    min-width: 75px;
+}
+
+.notice-del {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 30px;
+}
+
+.icon-notice {
+    margin: 10px;
+    background: url('/Contents/icons/icon-question.png');
+    height: 32px;
+    width: 32px;
+}
+
+.notice-del-text {
+    padding: 5px 5px;
+    height: 62px;
+    width: 346px;
+}
+
+
+/*
+    Giao diện chọn ngày 
+    Người tạo: LHQuan 26/8/2019
+*/
+.ui-datepicker-trigger {
+    margin-top: 3px;
+    margin-left: -19px;
+    background: url('/Contents/icons/IconSprite.png') no-repeat 0 -497px;
+    width: 15px;
+    height: 13px;
+}
+
+.ui-datepicker-prev {
+    background: url('/Contents/icons/IconSprite.png') no-repeat 0 -1024px;
+    top: 7px !important;
+    width: 15px !important;
+    height: 15px !important;
+}
+
+.ui-datepicker-next {
+    background: url(/Contents/icons/IconSprite.png) no-repeat 0 -1264px;
+    width: 15px !important;
+    height: 15px !important;
+    top: 7px !important;
+}

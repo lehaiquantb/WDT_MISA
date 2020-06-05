@@ -1,0 +1,425 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <title>CUKCUK_LHQuan_WDT03</title>
+    <meta name="author" content="LHQuan.WDT03" />
+    <meta name="description" content="Làm bài tập cuối khóa Web Dev Training - MISA" />
+    <link href="/CSS/libraries/jquery-ui.css" rel="stylesheet" />
+    <link href="/CSS/views/style.css" rel="stylesheet" />
+    <link href="/CSS/views/menu.css" rel="stylesheet" />
+    <link href="/CSS/views/header.css" rel="stylesheet" />
+    <link href="/CSS/views/content.css" rel="stylesheet" />
+    <link href="/CSS/views/dialog.css" rel="stylesheet" />
+</head>
+<body>
+    <!--Phần header-->
+    <div id="header">
+        <div class="header-left header-title">
+            <select class="header-title header-title-option">
+                <option>
+                    Nhà hàng biển đông
+                </option>
+            </select>
+        </div>
+
+        <div class="header-right">
+            <div class="lang">
+                <select class="lang lang-option">
+                    <option>Tiếng việt(tiếng việt)</option>
+                </select>
+            </div>
+            <div class="icon notification"></div>
+            <div class="icon phone"></div>
+            <div class="user">
+                <div class="user-panel">
+                    <div class="img-user"></div>
+                    <span>Đặng Thành Tâm</span>
+                    <div class="icon arrow-down-white1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Phần menu-->
+    <div id="nav-menu">
+        <div class="logo-cukcuk">
+            <div class="icon slibar-menu"></div>
+            <div class="logo">
+                <a href="#" class="link-logo">
+                </a>
+            </div>
+        </div>
+        <div class="nav-menu-left">
+            <ul>
+                <li class="list">
+                    <div class="icon home"></div>
+                    <a href="#">Tổng quan</a>
+                </li>
+                <li class="list">
+                    <div class="icon report"></div>
+                    <a href="#">Báo cáo</a>
+                    <div class="icon arrow-down-white"></div>
+                </li>
+                <li class="list">
+                    <div class="icon purchares"></div>
+                    <a href="#">Mua hàng</a>
+                </li>
+                <li class="list">
+                    <div class="icon stock"></div>
+                    <a href="#">Kho</a>
+                </li>
+                <li class="list">
+                    <div class="icon cash"></div>
+                    <a href="#">Quỹ tiền mặt</a>
+                </li>
+                <li class="list">
+                    <div class="icon deposit"></div>
+                    <a href="#">Quỹ tiền gửi</a>
+                </li>
+                <li class="list">
+                    <div class="icon payment-receipt"></div>
+                    <a href="#">Chi phí</a>
+                </li>
+                <li class="list">
+                    <div class="icon promotion"></div>
+                    <a href="#">Khuyến mại</a>
+                </li>
+                <li class="list">
+                    <div class="icon menu"></div>
+                    <a href="#">Thực đơn</a>
+                </li>
+                <li class="list">
+                    <div class="icon dictionary"></div>
+                    <a href="#">Danh mục</a>
+                </li>
+                <li class="list">
+                    <div class="icon cancel-meinvoice"></div>
+                    <a href="#">Hủy hóa đơn</a>
+                </li>
+                <li class="list">
+                    <div class="icon sms-marketing"></div>
+                    <a href="#">SMS-Marketing</a>
+                </li>
+                <li class="list">
+                    <div class="icon delivery-partner"></div>
+                    <a href="#">Đối tác giao hàng</a>
+                </li>
+                <li class="list">
+                    <div class="icon meinvoice"></div>
+                    <a href="#">Hóa đơn điện tử</a>
+                    <div class="icon arrow-down-white"></div>
+                </li>
+                <li class="list">
+                    <div class="icon settings"></div>
+                    <a href="#">Thiết lập hệ thống</a>
+                </li>
+                <li class="list">
+                    <div class="icon menu-help"></div>
+                    <a href="#">Trợ giúp</a>
+                    <div class="icon arrow-down-white"></div>
+                </li>
+                <li class="list">
+                    <div class="icon subscriber"></div>
+                    <a href="#">Thuê bao</a>
+                </li>
+                <li class="list">
+                    <div class="icon five-food"></div>
+                    <a href="#">5Food</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Phần content-->
+    <div id="content">
+        <div class="content-head">
+            <div class="content-category">
+                <div class="category-name">
+                    <span style="color:black; font-weight: bold; font-size: 16px;">Danh mục</span>
+                    <div class="icon arrow-right-blue"></div>
+                    <span style="color:blue; font-weight: bold;">Khách hàng</span>
+                </div>
+                <div class="restart-settings"> &nbsp;&nbsp; Quay lại thiết lập ban đầu</div>
+                <div class="feedback">
+                    <div class="icon icon-feedback"></div>
+                    <span>Phản hồi</span>
+                </div>
+            </div>
+            <div class="toolbar">
+                <button class="toolbar-item add-new">
+                    <div class="icon add-new"></div>
+                    <span>Thêm</span>
+                </button>
+                <button class="toolbar-item duplicate" disabled>
+                    <div class="icon duplicate"></div>
+                    <span>Nhân bản</span>
+                </button>
+                <button class="toolbar-item edit" disabled>
+                    <div class="icon edit"></div>
+                    <span>Sửa</span>
+                </button>
+                <button class="toolbar-item delete" disabled>
+                    <div class="icon delete"></div>
+                    <span>Xóa</span>
+                </button>
+                <button class="toolbar-item reload">
+                    <div class="icon reload"></div>
+                    <span>Nạp</span>
+                </button>
+                <div class="sperator"></div>
+                <button class="toolbar-item import" disabled>
+                    <div class="icon import"></div>
+                    <span>Nhập khẩu</span>
+                </button>
+                <button class="toolbar-item export" disabled>
+                    <div class="icon export"></div>
+                    <span>Xuất khẩu</span>
+                </button>
+                <div class="sperator"></div>
+                <button class="toolbar-item customer-group" disabled>
+                    <div class="icon customer-group"></div>
+                    <span>Gộp khách hàng</span>
+                </button>
+                <div class="sperator"></div>
+                <button class="toolbar-item help-content">
+                    <div class="icon help-content"></div>
+                    <span>Giúp</span>
+                </button>
+            </div>
+        </div>
+        <div class="content-data">
+            <div class="table-content">
+                <table class="main-table">
+                    <thead>
+                        <tr>
+                            <th fieldName="CustomerNo">
+                                Mã khách hàng
+                                <div>
+                                    <div class="icon filter">*</div>
+                                    <input />
+                                </div>
+                            </th>
+                            <th fieldName="CustomerName">
+                                Tên khách hàng
+                                <div>
+                                    <div class="icon filter">*</div>
+                                    <input />
+                                </div>
+                            </th>
+                            <th fieldName="CompanyName">
+                                Tên công ty
+                                <div>
+                                    <div class="icon filter">*</div>
+                                    <input />
+                                </div>
+                            </th>
+                            <th fieldName="TaxCode">
+                                Mã số thuế
+                                <div>
+                                    <div class="icon filter">*</div>
+                                    <input />
+                                </div>
+                            </th>
+                            <th fieldName="Address">
+                                Địa chỉ
+                                <div>
+                                    <div class="icon filter">*</div>
+                                    <input />
+                                </div>
+                            </th>
+                            <th fieldName="CustomerPhone">
+                                Số điện thoại
+                                <div>
+                                    <div class="icon filter">*</div>
+                                    <input />
+                                </div>
+                            </th>
+                            <th fieldName="Email">
+                                Email
+                                <div>
+                                    <div class="icon filter">*</div>
+                                    <input />
+                                </div>
+                            </th>
+                            <th fieldName="MemberCardCode">
+                                Mã thẻ thành viên
+                                <div>
+                                    <div class="icon filter">*</div>
+                                    <input />
+                                </div>
+                            </th>
+                            <th fieldName="CardClass">
+                                Hạng thẻ
+                                <div>
+                                    <div class="icon filter">*</div>
+                                    <input />
+                                </div>
+                            </th>
+                            <th fieldName="MoneyInDebt">
+                                Số tiền nợ
+                                <div>
+                                    <div class="icon filter">*</div>
+                                    <input />
+                                </div>
+                            </th>
+                            <th fieldName="Note">
+                                Ghi chú
+                                <div>
+                                    <div class="icon filter">*</div>
+                                    <input />
+                                </div>
+                            </th>
+                            <th fieldName="FiveFoodMember">
+                                Thành viên 5food
+                                <div>
+                                    <select>
+                                        <option value="yes">Có</option>
+                                        <option value="no">Không</option>
+                                    </select>
+                                </div>
+                            </th>
+                            <th fieldName="StopWatching">
+                                Ngừng theo dõi
+                                <div>
+                                    <select>
+                                        <option value="yes">Có</option>
+                                        <option value="no">Không</option>
+                                    </select>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="paging">
+                <button class="icon first-page"></button>
+                <button class="icon prev-page"></button>
+                <div class="sperator"></div>
+                Trang
+                <input value="1" class="page-index" style="border:none" />
+                trên
+                <div value="" class="page-total" style="border:none"></div>
+                <div class="sperator"></div>
+                <button class="icon next-page"></button>
+                <button class="icon last-page"></button>
+                <div class="sperator"></div>
+                <button class="icon refresh-page"></button>
+                <div class="sperator"></div>
+                <select class="select-page-size">
+                    <option value="25">25</option>
+                    <option value="50" selected>50</option>
+                    <option value="100">100</option>
+                </select>
+                <div class="arrow-down-black"></div>
+                <div class="show-amount">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Phần con quay data-->
+    <div id="loading"></div>
+
+    <!--Phần DIALOG thêm bản ghi-->
+    <div class="dialog dialog-customer">
+        <div class="row two-field">
+            <div class="field1">
+                Mã khách hàng <span style="color: red">(*)</span>
+                <input fieldName="CustomerNo" />
+            </div>
+            <div class="validate vld-CustomerNo">!</div>
+            <div class="field2">
+                &nbsp; &nbsp;
+                Tên khách hàng <span style="color:red">(*)</span>
+                <input fieldName="CustomerName" />
+            </div>
+            <div class="validate vld-CustomerName">!</div>
+        </div>
+        <div class="row">
+            Nhóm khách hàng
+            <input fieldName="CustomerGroup" />
+            <div class="validate vld-CustomerGroup">!</div>
+        </div>
+        <div class="row">
+            ĐT di động<span style="color:red">(*)</span>
+            <input fieldName="CustomerPhone" />
+            <div class="validate vld-CustomerPhone">!</div>
+        </div>
+        <div class="row">
+            Ngày sinh
+            <input type="text" fieldName="Birthday" />
+        </div>
+        <div class="row">
+            Tên công ty
+            <input fieldName="CompanyName" />
+            <div class="validate vld-CompanyName">!</div>
+        </div>
+        <div class="row two-field">
+            <div class="field1">
+                Mã số thuế
+                <input fieldName="TaxCode" />
+            </div>
+            <div class="validate vld-TaxCode">!</div>
+            <div class="field2">
+                &nbsp; &nbsp;
+                Email
+                <input fieldName="Email" />
+            </div>
+            <div class="validate vld-Email">!</div>
+        </div>
+        <div class="row">
+            Địa chỉ
+            <input fieldName="Address" />
+            <div class="validate vld-Address">!</div>
+        </div>
+        <div class="note">
+            Ghi chú
+            <input fieldName="Note" />
+            <div class="validate vld-Note">!</div>
+        </div>
+        <div class="row checkbox">
+            Ngừng theo dõi
+            <input type="checkbox" class="stop-watching" />
+        </div>
+        <div class="row btn-function">
+            <button class="btn-help">
+                <div class="icon icon-help"></div>
+                Giúp
+            </button>
+            <button class="btn-save">
+                <div class="icon icon-save"></div>
+                Cất
+            </button>
+            <button class="btn-save-add">
+                <div class="icon icon-save-add"></div>
+                Cất&Thêm
+            </button>
+            <button class="btn-cancel">
+                <div class="icon icon-cancel"></div>
+                Hủy bỏ
+            </button>
+        </div>
+    </div>
+
+    <!--DIALOG thông báo khi xóa bản ghi-->
+    <div class="dialog dialog-del-customer">
+        <div class="notice-del">
+            <div class="icon-notice"></div>
+            <div class="notice-del-text"></div>
+        </div>
+        <div class="del-yes-no">
+            <button class="del-yes">Có</button>
+            <button class="del-no">Không</button>
+        </div>
+    </div>
+    <script src="/Scripts/libraries/jquery-3.4.1.js"></script>
+    <script src="/Scripts/libraries/jquery-ui.js"></script>
+    <script src="/Scripts/common/common.js"></script>
+    <script src="/Scripts/common/base.js"></script>
+    <script src="/Scripts/views/customer.js"></script>
+</body>
+</html>

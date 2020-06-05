@@ -1,0 +1,172 @@
+﻿/*
+    logo-cukcuk
+    Người tạo: LHQuan 23/08/2019
+*/
+.logo-cukcuk {
+    border-bottom: 1px solid #00577b;
+    margin-top: 0px;
+    width: 230px;
+    height: 55px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.icon.slibar-menu {
+    height: 35px;
+    width: 35px;
+    background: url('/Contents/icons/icon-left-header.png') no-repeat left center;
+}
+
+.logo-cukcuk .logo {
+    margin-left: 12px;
+    margin-top: -34px;
+    width: 200px;
+    height: 30px;
+    background: url('/Contents/icons/logo-text.png') no-repeat center center !important;
+}
+
+/*
+    reset lại thuộc tính ul
+*/
+#nav-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+    tạo hiệu hứng khi di chuột qua menu
+    Người tạo: LHQuan 23/08/2019
+*/
+#nav-menu li:hover {
+    background-color: #00577b;
+    color: #fff;
+}
+    /*
+    Chỉnh chi tiết thuộc tính của danh sách
+    Người tạo: LHQuan 23/08/2019
+    */
+    #nav-menu ul li {
+        line-height: 40px;
+        height: 40px;
+    }
+
+#nav-menu li {
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    padding: 0;
+    border-bottom: 1px solid #00577b;
+}
+
+#nav-menu a{
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+/*icon chung trong nav-menu*/
+#nav-menu li .icon {
+    margin-left: 10px;
+    margin-right: 8px;
+    width: 25px;
+    height: 25px;
+}
+
+/*icon-down-white*/
+.icon.arrow-down-white {
+    position: absolute;
+    background: url('/Contents/icons/iconMenu.png') no-repeat 3px -269px;
+    right: 0px;
+}
+
+/*icon home*/
+.icon.home {
+    background: url('/Contents/icons/iconMenu.png')no-repeat -5px -3px;
+}
+
+/*icon report*/
+.icon.report {
+    background: url('/Contents/icons/iconMenu.png') no-repeat -2px -192px;
+}
+
+/*icon purchares*/
+.icon.purchares {
+    background: url('/Contents/icons/iconMenu.png') no-repeat -1px -377px;
+}
+
+/*icon stock*/
+.icon.stock {
+    background: url('/Contents/icons/iconMenu.png') no-repeat -4px -40px;
+}
+
+/*icon cash*/
+.icon.cash {
+    background: url('/Contents/icons/iconMenu.png') no-repeat -5px -80px;
+}
+
+/*icon deposit*/
+.icon.deposit {
+    background: url('/Contents/icons/icon-deposit.png') no-repeat 0 0;
+}
+
+/*icon payment-receipt*/
+.icon.payment-receipt {
+    background: url('/Contents/icons/icon-cost.png') no-repeat -2px -3px;
+}
+
+/*icon promotion*/
+.icon.promotion {
+    background: url('/Contents/icons/iconMenu.png') no-repeat -3px -117px;
+}
+
+/*icon menu*/
+.icon.menu {
+    background: url('/Contents/icons/vector-smart-object.png') no-repeat;
+}
+
+/*icon dictionary*/
+.icon.dictionary {
+    background: url('/Contents/icons/iconMenu.png') no-repeat -3px -155px;
+}
+
+/*icon cancel-meinvoice*/
+.icon.cancel-meinvoice {
+    background: url('/Contents/icons/cancel-invoice.png') no-repeat;
+}
+
+/*icon sms-marketing*/
+.icon.sms-marketing {
+    background: url('/Contents/icons/sms-marketing-blue-300x300.png') no-repeat -4px;
+    background-size: 35px;
+}
+
+/*icon delivery-partner*/
+.icon.delivery-partner {
+    background: url('/Contents/icons/ic_GH.svg') no-repeat;
+}
+
+/*icon meinvoice*/
+.icon.meinvoice {
+    background: url('/Contents/icons/ic_hoadon.png') no-repeat;
+}
+
+/*icon settings*/
+.icon.settings {
+    background: url('/Contents/icons/iconMenu.png') no-repeat -2px -234px;
+}
+
+/*icon menu-help*/
+.icon.menu-help {
+    background: url('/Contents/icons/iconHelp.png') no-repeat;
+}
+
+/*icon subscriber*/
+.icon.subscriber {
+    background: url('/Contents/icons/icon-subscriber.png') no-repeat;
+}
+
+/*icon 5food*/
+.icon.five-food {
+    background: url('/Contents/icons/5food.png');
+}
